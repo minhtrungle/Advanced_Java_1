@@ -6,7 +6,7 @@ public class Ex3 {
         /*nhap so nguyen x tu ban phim in ra x la so am hay duong*/
         int x;
         Scanner in = new Scanner(System.in);
-        System.out.print("nhap x =");
+        System.out.print("Nhap x =");
         x = in.nextInt();
         in.close();
 

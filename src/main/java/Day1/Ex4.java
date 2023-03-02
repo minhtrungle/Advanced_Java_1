@@ -5,7 +5,7 @@ public class Ex4 {
         /*nhap so nam x, hoi x la nam nhuan hay khong nhuan*/
         int x;
         Scanner in = new Scanner(System.in);
-        System.out.print("nhap nam ");
+        System.out.print("Nhap nam ");
         x = in.nextInt();
         in.close();
 

@@ -16,7 +16,5 @@ public class Example2 {
 
         int c = a + b;
         System.out.printf("%d + %d = %d", a, b,c);
-
-
     }
 }

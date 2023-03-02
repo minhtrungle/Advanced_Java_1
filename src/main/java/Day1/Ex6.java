@@ -7,7 +7,7 @@ public class Ex6 {
         /*nhap so nguyen x kiem tra có phai so chinh phuong*/
         int x;
         Scanner in = new Scanner(System.in);
-        System.out.print("nhap x ");
+        System.out.print("Nhap x ");
         x = in.nextInt();
         in.close();
         double sqr = sqrt(x);

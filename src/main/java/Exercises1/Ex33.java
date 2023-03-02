@@ -9,7 +9,9 @@ public class Ex33 {
         System.out.print("Nhap n:");
         int n = in.nextInt();
         in.close();
+
         if (n < 1) {
+            System.out.println("Nhap lai n");
             System.exit(0);
         }
 

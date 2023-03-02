@@ -6,15 +6,14 @@ public class Ex1 {
 
         float x, y,z;
         Scanner in = new Scanner(System.in);
-        System.out.print("x=");
+        System.out.print("x =");
         x = in.nextFloat();
 
-        System.out.print("y=");
+        System.out.print("y =");
         y = in.nextFloat();
 
-        System.out.print("z=");
+        System.out.print("z =");
         z = in.nextFloat();
-
         in.close();
 
         double tbc = (x + y +z) / 3.0;
@@ -22,6 +21,6 @@ public class Ex1 {
         double tbn = Math.pow(x*y*z, 1/3);
 
         System.out.printf("Trung binh cong la: %.3f\n", tbc);
-        System.out.printf("Trung binh nhan la: %.31" , tbn);
+        System.out.printf("Trung binh nhan la: %.3f" , tbn);
     }
 }

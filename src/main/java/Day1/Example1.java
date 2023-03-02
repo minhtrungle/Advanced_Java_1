@@ -6,10 +6,10 @@ public class Example1 {
         int year = 2023;
         System.out.println(name);
         //print fomat
-        System.out.printf(name);
+        System.out.println(name);
         int nam = 1999;
         int tuoi = 2023 - nam;
-        //
+
         System.out.printf("Ten toi la %s va tuoi cua toi la %d", name, tuoi);
     }
 }
