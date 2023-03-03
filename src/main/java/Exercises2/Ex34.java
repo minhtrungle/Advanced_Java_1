@@ -1,9 +1,10 @@
-package Exercises1;
+package Exercises2;
 
 import java.util.Scanner;
-import  static java.lang.Math.sqrt;
 
-public class Ex33 {
+import static java.lang.Math.sqrt;
+
+public class Ex34 {
     public  static  void main (String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Nhap n:");
@@ -16,9 +17,9 @@ public class Ex33 {
             }
         }
 
-        double x = sqrt(2);
-        for (int i = 2; i <= n; i++) {
-            x = sqrt(2 + x);
+        double x = 0;
+        for (int i = 1; i <= n; i++) {
+            x = sqrt(i + x);
         }
         System.out.printf("Ket qua la: %f", x);
     }

@@ -12,8 +12,12 @@ public class Ex3 {
         n = in.nextLong();
         in.close();
 
+        if (n < 1) {
+            System.out.println("Nhap lai n");
+            System.exit(0);
+        }
         for (int i = 1; i <= n; i ++) {
-            sum += 1 / i;
+            sum += 1.0 / i;
         }
         System.out.printf("Tong cua S(n) la: %f", sum);
     }

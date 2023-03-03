@@ -12,9 +12,13 @@ public class Ex1 {
         n = in.nextLong();
         in.close();
 
+        if (n < 1) {
+            System.out.println("Nhap lai n");
+            System.exit(0);
+        }
         for (int i = 1; i <= n; i ++) {
             sum += i;
         }
-        System.out.printf("Tong cua S(n) la: %d", sum);
+        System.out.println("Tong cua S(n) la" + sum);
     }
 }
