@@ -1,11 +1,12 @@
 package Exercises1;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import static java.lang.Math.sqrt;
 
 public class Ex82 {
-    public static void main (String[] args) {
+    public static void main (String[] args) throws IOException {
         /*Viết chương trình tìm số lớn nhất trong ba số thực a, b, c.*/
         float a, b, c, maxV;
         Scanner in = new Scanner(System.in);
