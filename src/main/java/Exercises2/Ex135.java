@@ -19,7 +19,7 @@ public class Ex135 {
             System.out.print(arr[i] + "\t");
         }
     }
-    //Tim gia tri lon nhat
+    //Tim gia tri duong dau tien
     public static float plusArray(float[] arr) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 0) {
