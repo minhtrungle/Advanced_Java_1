@@ -21,6 +21,28 @@ public class Ex140 {
             System.out.print(arr[i] + "\t");
         }
     }
+    //Tim gia tri duong nho nhat
+//    public static float minPlusNumber(float[] arr) {
+//        float min = 0;
+//        int count = 0;
+//        for (int i = 0; i < arr.length; i++) {
+//            if (arr[i] > 0) {
+//                min = arr[i];
+//                count ++;
+//                break; //Cho gia tri min là gia tri duong dau tien
+//            }
+//        }
+//        if (count == 0) {
+//            return -1;
+//        }
+//        for (int i = 0; i < arr.length; i++) {
+//            if (arr[i] > 0 && arr[i] < min) {
+//                min = arr[i];
+//            }
+//        }
+//        return min;
+//    }
+    //cach 2
     //Tim gia tri duong dau tien
     public static float fistPlusNumber(float[] arr) {
         for (int i = 0; i < arr.length; i++) {
@@ -43,6 +65,7 @@ public class Ex140 {
         }
         return min;
     }
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Nhap kich thuoc mang");
