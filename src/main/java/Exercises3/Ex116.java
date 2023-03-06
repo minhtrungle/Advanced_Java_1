@@ -22,7 +22,7 @@ public class Ex116 {
         in.close();
 
         long result = sumNumber(n);
-        if (n != -1) {
+        if (result != -1) {
             System.out.printf("Tong: %d", result );
         } else {
             System.out.print("Khong hop le");

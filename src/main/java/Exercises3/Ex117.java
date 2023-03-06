@@ -17,10 +17,6 @@ public class Ex117 {
         }
         return 1/t;
     }
-    public static double sumSquare(int n) {
-        double Sum = 0;
-        return Sum;
-    }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Nhap n:");
@@ -31,11 +27,10 @@ public class Ex117 {
             System.exit(0);
         }
         int x = 2;
-        double result = squareNumber(2, n);
-        if (n != -1) {
-            System.out.printf("Tong: %d", result );
-        } else {
-            System.out.print("Khong hop le");
+        double Sum = 0;
+        for (int i = 1; i <= n; i++) {
+            Sum += squareNumber(x, i);;
         }
+        System.out.println("Tong la: " + Sum);
     }
 }
