@@ -32,8 +32,8 @@ public class Ex157 {
             if (b < arr[i]) {
                 b = (int)arr[i];
             }
-            System.out.printf("Doan chua cac gia tri trong mang la: [%d; %d]", a, b);
         }
+        System.out.printf("\nDoan chua cac gia tri trong mang la: [%f; %f]", a, b);
     }
     public static void main(String[] args) throws Exception {
         try {
