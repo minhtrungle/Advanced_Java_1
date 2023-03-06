@@ -18,7 +18,7 @@ public class Ex3 {
         HinhTron[] arr = new HinhTron[n];
         for (int i = 0; i < arr.length; i++) {
             System.out.print("Hinh tron thu " + i + "\n");
-            System.out.print("Nhap ban kinh");
+            System.out.print("Nhap ban kinh ");
             double r = in.nextDouble();
             arr[i] = new HinhTron(r); //Khai báo đối tượng mảng ở bên HinhTron
         }
@@ -34,8 +34,8 @@ public class Ex3 {
                 index = i;
             }
         }
+        System.out.printf("Hinh co chu vi lon nhat la: %d\n", index);
         System.out.println(arr[index].toString());
-        System.out.printf("Hinh co chu vi lon nhat la: %d", index);
 
         //in ra hình có diện tích bé nhất
         double min = arr[0].tinhDienTich();
@@ -64,7 +64,7 @@ public class Ex3 {
                 Count ++;
             }
         }
-        System.out.printf("\nCo so hinh tron co chu vi lon hon trung binh chu vi la: %d", Count);
+        System.out.printf("\nCo %d hinh tron co chu vi lon hon trung binh chu vi\n", Count);
 
         //Sắp xếp theo bán kính tăng dần và in ra
         for (int i = 0; i < arr.length - 1; i++) {
