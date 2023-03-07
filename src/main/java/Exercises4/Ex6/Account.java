@@ -62,13 +62,20 @@ public class Account {
         }
         return balance;
     }
-    public int transferTo( Account another, int amount) {
-        if (amount <= balance) {
-            balance = amount;
-        } else {
+    public int transferTo(Account another, int amount){
+        // A - balance: 100$, B - balance: 80$
+        // A -> B: 30$
+        // A - 30; B + 30
+        if(this.balance < amount){
             System.out.println("Amount exceeded balance");
         }
-        return balance;
+        else {
+            // Tru Amount trong tai khoan hien tai
+            this.balance = this.balance - amount;
+            // Tang amount trong tai khoan con laij
+            another.balance = another.balance + amount;
+        }
+        return this.balance;
     }
 
     @Override
