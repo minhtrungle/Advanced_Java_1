@@ -1,0 +1,10 @@
+Giống bài 4.1 nhưng giải theo cách khác, ko dùng kế thừa
+
+Composition - tạm dịch là tổng hợp - là một kỹ thuật design.
+
+Để thực hiện kỹ thuật Composition, ta cần sử dụng các object ở một class khác làm thuộc tính cho object được tạo bởi class tổng hợp.
+
+Composition được sinh ra nhằm đạt được mục đích là implement mối quan hệ có-một (has-a) giữa các class. Quan hệ has-a của 2 class tức
+là trong quá trình xây dựng class, class này có tham chiếu đến class khác (xem như là thành viên của nó).
+
+Ta áp dụng Composition khi cần sử dụng những chức năng của một class nhưng lại không muốn tác động lên phần code của class đó.
