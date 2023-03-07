@@ -8,6 +8,9 @@ public class Circle {
     }
 
     public Circle(double radius) {
+        if (radius <= 0) {
+            throw new RuntimeException("Error");
+        }
         this.radius = radius;
     }
     public double getRadius() {
@@ -16,9 +19,10 @@ public class Circle {
 
     public void setRadius(double radius) {
         try {
-            if (radius > 0) {
-                this.radius = radius;
+            if (radius <= 0) {
+                throw new RuntimeException("Error");
             }
+            this.radius = radius;
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

@@ -7,23 +7,20 @@ public class Circle {
     }
 
     public Circle(double radius) {
+        if (radius <= 0) {
+            throw new RuntimeException("Khong thoa man");
+        }
         this.radius = radius;
-        this.color = "red";
     }
     public double getRadius() {
         return radius;
     }
 
     public void setRadius(double radius) {
-        try {
-            if (radius > 0) {
-                this.radius = radius;
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            System.out.println("always printed");
+        if (radius <= 0) {
+            throw new RuntimeException("Khong thoa man");
         }
+        this.radius = radius;
     }
     public double getArea() {
         return radius * radius * Math.PI;

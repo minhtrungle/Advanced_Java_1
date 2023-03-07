@@ -14,5 +14,12 @@ public class TestMain {
 
         System.out.printf("area is: %.2f%n", c1.getArea());
         System.out.printf("circumference is: %.2f%n", c1.getCircumference());
+        try{
+            Circle c3 = new Circle(-3);
+            c3.setRadius(-6);
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
     }
 }
