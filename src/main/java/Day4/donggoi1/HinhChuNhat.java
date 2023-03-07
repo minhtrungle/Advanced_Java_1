@@ -41,10 +41,12 @@ public class HinhChuNhat {
     }
 
     public void setChieuRong(double chieuRong) {
-        if (chieuRong >= 0) {
-            this.chieuRong = chieuRong;
-        } else {
-            System.out.print("Chieu rong khong thoa man");
+        try {
+            if (chieuRong >= 0) {
+                this.chieuRong = chieuRong;
+            } 
+        } catch (Exception e) {
+            System.out.println("Exception:");
         }
     }
     public double chuVi() {
