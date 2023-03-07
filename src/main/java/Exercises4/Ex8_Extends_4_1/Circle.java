@@ -3,13 +3,22 @@ package Exercises4.Ex8_Extends_4_1;
 public class Circle {
     private double radius = 1.0;
     private String color = "red";
-    public Circle(double radius, String color) {
-    }
-
     public Circle() {
+    }
+    public Circle(double radius) {
+        if(radius <= 0){
+            throw new RuntimeException("Error");
+        }
+        this.radius = radius;
+    }
+    public Circle(double radius, String color) {
+        if(radius <= 0){
+            throw new RuntimeException("Error");
+        }
         this.radius = radius;
         this.color = "red";
     }
+
     public double getRadius() {
         return radius;
     }
