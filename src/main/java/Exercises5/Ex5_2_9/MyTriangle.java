@@ -31,6 +31,7 @@ public class MyTriangle {
         double AB = v1.distance(v2);
         double BC = v2.distance(v3);
         double AC = v1.distance(v3);
+
         if (AB == BC && BC == AC) {
             return "Equilateral";
         } else if (AB == BC || BC == AC) {
