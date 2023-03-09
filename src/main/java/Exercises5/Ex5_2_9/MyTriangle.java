@@ -34,7 +34,7 @@ public class MyTriangle {
         if (AB == BC && BC == AC) {
             return "Equilateral";
         } else if (AB == BC || BC == AC) {
-            return "Ssosceles";
+            return "Isosceles";
         }
         return "Scalene";
     }
